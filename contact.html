@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<style type="text/css">
+		*{
+			margin: 0;
+			padding: 0;
+		}	
+		ul{
+			list-style-type: none;
+		}
+		h2{
+			margin-top: 50px;
+			margin-bottom: 50px;
+			text-align: center;
+		}
+		#mem_form{
+			width: 1200px;
+			text-align: center;
+			padding-top: 5px;
+			padding-bottom: 10px;
+		}
+		.cols li{
+			display: inline-block;
+			margin-top: 5px;
+		}
+		.cols li.col1{
+			width: 200px;
+			text-align: right;
+		}
+		.cols li.col2{
+			width: 500px;
+			text-align: left;
+			margin-left: 30px ;
+		}
+		.cols li.col2 input.hp{
+			width: 40px;
+		}
+		#con{
+			vertical-align: top;
+		}
+		#sub{
+			text-align: right;
+			margin-right: 370px;
+		}
+	</style>
+</head>
+<body>
+	<h2>섭외/후원문의</h2>
+	<ul id="mem_form">
+		<li>
+			<ul class="cols">
+				<li class="col1">이름</li>
+				<li class="col2"><input type="text"></li>
+			</ul>
+		</li>
+		<li>
+			<ul class="cols">
+				<li class="col1">비밀번호</li>
+				<li class="col2"><input type="password"></li>
+			</ul>
+		</li>
+		<li>
+			<ul class="cols">
+				<li class="col1">연락처</li>
+				<li class="col2">
+					<select>
+						<option>010</option>
+						<option>011</option>
+						<option>017</option>
+					</select> -
+				<input class="hp" type="text"> - <input class="hp" type="text"></li>
+			</ul>
+		</li>
+		<li>
+			<ul class="cols">
+				<li class="col1">이메일</li>
+				<li class="col2"><input  type="text">@<select>
+					<option>선택</option>
+					<option>naver.com</option>
+					<option>gmail.com</option>
+					<option>daum.net</option>
+				</select></li>
+			</ul>
+		</li>
+		<li>
+			<ul class="cols">
+				<li class="col1">섭외/문의제목</li>
+				<li class="col2"><input type="text"></li>
+			</ul>
+		</li>
+		<li>
+			<ul class="cols">
+				<li class="col1" id="con">섭외/문의내용</li>
+				<li class="col2">
+				<textarea cols="35" rows="5"></textarea></li>
+			</ul>
+		</li>
+		<li>
+			<ul class="cols">
+				<li class="col1">파일 첨부</li>
+				<li class="col2">
+				<input type="file"></li>
+			</ul>
+		</li>
+	</ul>
+	<div id="sub">
+		<input type="submit" value="제출">
+	</div>
+</body>
+</html>
